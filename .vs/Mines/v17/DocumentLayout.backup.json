@@ -1,0 +1,115 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\C#\\Mines\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|c:\\users\\hp\\documents\\c#\\mines\\gamble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|solutionrelative:gamble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|c:\\users\\hp\\documents\\c#\\mines\\gamble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|solutionrelative:gamble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|c:\\users\\hp\\documents\\c#\\mines\\placeholdermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|solutionrelative:placeholdermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|c:\\users\\hp\\documents\\c#\\mines\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|c:\\users\\hp\\documents\\c#\\mines\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB9B5BFE-B3E8-46E7-8E64-AE20743F3C4C}|Mines.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlaceHolderManager.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Mines\\PlaceHolderManager.cs",
+              "RelativeDocumentMoniker": "PlaceHolderManager.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Mines\\PlaceHolderManager.cs",
+              "RelativeToolTip": "PlaceHolderManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T09:18:48.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gamble.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Mines\\Gamble.cs",
+              "RelativeDocumentMoniker": "Gamble.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Mines\\Gamble.cs*",
+              "RelativeToolTip": "Gamble.cs*",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwEUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T09:19:05.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Gamble.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Mines\\Gamble.cs",
+              "RelativeDocumentMoniker": "Gamble.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Mines\\Gamble.cs [Design]*",
+              "RelativeToolTip": "Gamble.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T09:29:29.544Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Mines\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Mines\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T08:43:09.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Mines\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Mines\\Login.cs [Design]",
+              "RelativeToolTip": "Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T08:26:53.353Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
