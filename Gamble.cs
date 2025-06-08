@@ -9,13 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Mines
 {
     public partial class Gamble : Form
     {
+        const int TotalTiles = 25;
         int Mines { get; set; }
         int RemainingMines { get; set; }
+        int SafePicks { get; set; } = 0;
+        double Probability { get; set; } = 1.0;
         public Gamble()
         {
             InitializeComponent();
@@ -75,26 +79,37 @@ namespace Mines
 
             if (clickedButton != null && clickedButton.Tag != null)
             {
-                // Convert the Tag to string before parsing
                 if (int.TryParse(clickedButton.Tag.ToString(), out int value))
                 {
                     if (minePositions.Contains(value))
                     {
-                        clickedButton.FillColor = Color.Red; // It's a mine
+                        clickedButton.FillColor = Color.Red;
                         MessageBox.Show("IT'S A MINE!");
                         resetTiles(false);
-
+                        ResetGame();
                     }
                     else
                     {
-                        if(clickedButton.FillColor == Color.Black)
+                        if (clickedButton.FillColor == Color.Black)
                         {
-                            clickedButton.FillColor = Color.Lime; // Safe
-                            RemainingMines--;
-                            if (RemainingMines == 0)
+                            clickedButton.FillColor = Color.Lime;
+                            SafePicks++;
+
+                            // Calculate new multiplier
+                            double multiplier = CalculateMultiplier(SafePicks, Mines);
+
+                            if (double.TryParse(txtBet.Text, out double bet))
                             {
-                                MessageBox.Show("YOU WON!");
+                                double cashout = bet * multiplier;
+                                btnStartNCashout.Text = $"Cashout: {cashout:F2}";
+                            }
+
+                            // Check win condition
+                            if (SafePicks == (TotalTiles - Mines))
+                            {
+                                MessageBox.Show($"YOU WON! Final Multiplier: {multiplier:F2}x");
                                 resetTiles(false);
+                                ResetGame();
                             }
                         }
                     }
@@ -102,6 +117,33 @@ namespace Mines
             }
         }
 
+        private double CalculateMultiplier(int safePicks, int totalMines)
+        {
+            const int totalTiles = 25;
+            double probability = 1.0;
+
+            for (int i = 0; i < safePicks; i++)
+            {
+                int remainingSafeTiles = totalTiles - totalMines - i;
+                int remainingTiles = totalTiles - i;
+
+                probability *= (double)remainingSafeTiles / remainingTiles;
+            }
+
+            double multiplier = 1.0 / probability;
+
+            double houseEdge = 0.04;
+            multiplier *= (1.0 - houseEdge);
+
+            return Math.Round(multiplier, 4);
+        }
+
+        private void ResetGame()
+        {
+            SafePicks = 0;
+            Probability = 1.0;
+            btnStartNCashout.Text = "Start Game";
+        }
         private void resetTiles(bool en)
         {
             for (int i = 1; i <= 25; i++)
@@ -144,10 +186,15 @@ namespace Mines
             {
                 MessageBox.Show("Please select the number of mines first.");
             }
+            else if (string.IsNullOrEmpty(txtBet.Text) || !double.TryParse(txtBet.Text, out double bet) || bet <= 0)
+            {
+                MessageBox.Show("Please enter a valid bet amount.");
+            }
             else
             {
                 RemainingMines = 25 - Mines;
                 resetTiles(true);
+                btnStartNCashout.Text = $"Cashout: {txtBet.Text}";
                 try
                 {
                     minePositions = GenerateUniqueRandomNumbers(Mines);
@@ -160,6 +207,8 @@ namespace Mines
                 }
             }
         }
+
+        
 
         private void txtCustomMines_TextChanged(object sender, EventArgs e)
         {

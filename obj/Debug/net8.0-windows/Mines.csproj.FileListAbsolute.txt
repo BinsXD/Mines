@@ -21,3 +21,4 @@ C:\Users\HP\Documents\C#\Mines\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\
 C:\Users\HP\Documents\C#\Mines\obj\Debug\net8.0-windows\Mines.csproj.AssemblyReference.cache
 C:\Users\HP\Documents\C#\Mines\obj\Debug\net8.0-windows\Mines.csproj.Up2Date
 C:\Users\HP\Documents\C#\Mines\obj\Debug\net8.0-windows\Mines.Gamble.resources
+C:\Users\HP\Documents\C#\Mines\obj\Debug\net8.0-windows\Mines.sourcelink.json

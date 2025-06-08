@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mines")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4da72a91be6dcf47cee73490bb6c126be4e053e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mines")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mines")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
